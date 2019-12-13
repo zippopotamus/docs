@@ -1,0 +1,17 @@
+// Add your custom styles here
+
+table.striped thead tr {
+  @apply text-sm uppercase tracking-wide;
+}
+
+table.striped td {
+  @apply p-2;
+}
+
+table.striped thead td {
+  @apply border-b-2 border-gray-400;
+}
+
+table.striped tbody tr:nth-child(odd) {
+  @apply bg-gray-200;
+}
