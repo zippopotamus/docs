@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <img src="/assets/img/lilz.png" alt="Lil' Z, Zippopotam.us mascot" class="hidden lg:block mx-auto w-1/4 mb-6 lg:mb-0 object-contain">
+        <img src="/img/lilz.png" alt="Lil' Z, Zippopotam.us mascot" class="hidden lg:block mx-auto w-1/4 mb-6 lg:mb-0 object-contain">
     </div>
 
     <hr class="block my-8 border border-red-400 lg:hidden">

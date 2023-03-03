@@ -20,9 +20,6 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
 
     return {
         root,
-        build: {
-            outDir: ".",
-        },
         server: {
             watch: {
                 ignored: [
@@ -46,7 +43,6 @@ function runJigsaw(env, logger = undefined, ws = undefined) {
         }
 
         const bin = './vendor/bin/jigsaw';
-
 
         exec(`${bin} build ${env !== "production" ? "-c ": ""}${env}`, (err, stdout, stderr) => {
             if (err) {
@@ -87,6 +83,10 @@ const Jigsaw: (env: string, views: Array<string>) => Plugin = ((env, views) => (
     },
 
     buildStart() {
+
+    },
+
+    buildEnd() {
         runJigsaw(env, ({
             error: (error) => this.error(error)
         }))()

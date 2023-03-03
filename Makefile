@@ -13,3 +13,4 @@ dev: build_local
 .PHONY: clean
 clean:
 	rm -rf build_*
+	#rm -rf source/assets/main.css
