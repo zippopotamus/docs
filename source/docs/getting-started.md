@@ -4,7 +4,6 @@ description: How to use the free Zippopotam.us API service
 extends: _layouts.documentation
 section: content
 ---
-
 # Getting Started
 
 The core offering of [Zippopotam.us](https://zippopotam.us) is a free, open source <abbr title="application programming interface">API</abbr> that allows application developers to do various things with postal and US ZIP codes.

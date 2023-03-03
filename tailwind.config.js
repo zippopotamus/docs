@@ -1,4 +1,9 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: [
+      'source/**/*.php.blade',
+      '!source/**/_tmp/*' // exclude temporary files
+  ],
   theme: {
     extend: {
       fontFamily: {

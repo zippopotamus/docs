@@ -1,4 +1,4 @@
-## {{ trim($definition->summary) }} {#{{ str_slug($definition->summary) }}}
+## {{ trim($definition->summary) }} {#{{ Illuminate\Support\Str::slug($definition->summary) }}}
 
 <div class="path flex">
     <div class="flex w-auto bg-red-600 p-1 px-2 text-white inline-block text-sm tracking-wide uppercase">{{ $operation }}</div>

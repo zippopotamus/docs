@@ -4,5 +4,6 @@
 /vendor/
 .DS_Store
 /source/assets/build/
-/cache/*.php
+/cache/*
 /spec
+**/_*/**
