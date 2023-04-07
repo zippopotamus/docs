@@ -37,8 +37,8 @@
         @endif
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
-        <header class="flex items-center shadow bg-white border-b h-24 mb-8 py-4" role="banner">
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans dark:bg-zinc-900 dark:text-zinc-200">
+        <header class="flex items-center shadow border-b h-24 mb-8 py-4 dark:border-zinc-800 dark:bg-zinc-700" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
