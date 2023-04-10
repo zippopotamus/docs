@@ -6,6 +6,7 @@ use TightenCo\Jigsaw\Jigsaw;
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
 
+require_once "ensure_slash.php";
 /**
  * You can run custom code at different stages of the build process by
  * listening to the 'beforeBuild', 'afterCollections', and 'afterBuild' events.

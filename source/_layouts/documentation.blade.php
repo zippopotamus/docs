@@ -17,3 +17,13 @@
     </div>
 </section>
 @endsection
+
+@push("scripts")
+    <script>
+        document.querySelectorAll("a").forEach((a) => {
+            if (a.href === location.href) {
+                a.classList.add("current");
+            }
+        });
+    </script>
+@endpush
