@@ -11,7 +11,7 @@
             <p class="text-lg">Gain valuable insights about your users' location by looking up their postal code. <br class="hidden sm:block">Easily enable location-based features in your application.</p>
 
             <div class="md:flex text-center md:text-left my-10">
-                <a href="/docs/getting-started" title="{{ $page->siteName }} getting started" class="block md:flex md:w-auto w-full bg-red-600 hover:bg-red-700 font-normal text-white hover:text-white rounded mb-4 md:mb-0 md:mr-4 py-2 px-6 flex items-center justify-center">Get Started</a>
+                <a href="/docs/getting-started/" title="{{ $page->siteName }} getting started" class="block md:flex md:w-auto w-full bg-red-600 hover:bg-red-700 font-normal text-white hover:text-white rounded mb-4 md:mb-0 md:mr-4 py-2 px-6 flex items-center justify-center">Get Started</a>
 
                 <a href="https://github.com/zippopotamus" title="Zippopotam.us Github" class="block md:flex md:w-auto w-full bg-gray-100 hover:bg-gray-200 text-red-700 font-normal hover:text-red-900 rounded py-2 px-6 flex items-center justify-center">
                     <!-- github -->

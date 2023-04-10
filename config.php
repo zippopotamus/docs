@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'http://localhost:3000',
     'production' => false,
     'siteName' => 'Zippopotam.us',
     'siteDescription' => 'Free, easy to use postal code lookup service',
@@ -58,11 +58,12 @@ return [
     'isActiveParent' => function ($page, $menuItem) {
         if (is_object($menuItem) && $menuItem->children) {
             return $menuItem->children->contains(function ($child) use ($page) {
-                return trimPath($page->getPath()) == trimPath($child);
+                $withoutHash = fn($path) => preg_replace("/#.*$/", "", $path);
+                return $withoutHash($page->getPath()) == $withoutHash($child);
             });
         }
     },
     'url' => function ($page, $path) {
-        return \Illuminate\Support\Str::startsWith($path, 'http') ? $path : '/' . trimPath($path);
+        return urlWithSlash(\Illuminate\Support\Str::startsWith($path, 'http') ? $path :  ensure_slash($path));
     },
 ];
